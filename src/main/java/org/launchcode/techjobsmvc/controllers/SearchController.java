@@ -33,7 +33,7 @@ public class SearchController {
         } else {
             model.addAttribute("jobs", JobData.findByColumnAndValue(searchType ,searchTerm));
         }
-        return "search";
+        return "/search";
     }
 
 
